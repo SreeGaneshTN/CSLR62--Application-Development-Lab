@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    >
+    <View
+        android:layout_height="20dip"
+        android:background="@color/white" />
+    <TextView
+        android:text="ORDER AWAY!!"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:padding="3dip" />
+    <View
+        android:layout_height="20dip"
+        android:background="@color/white" />
+
+
+    <TableRow>
+        <TextView
+            android:text="MENU"
+            android:gravity="center"
+            android:padding="3dip" />
+        <Spinner
+            android:id="@+id/spinnerMenu"
+            android:layout_marginRight="20dp"
+            />
+
+    </TableRow>
+    <View
+        android:layout_height="5dip"
+        android:background="@color/white" />
+
+    <TableRow>
+
+        <TextView
+            android:text="DRINKS"
+            android:gravity="center"
+            android:padding="3dip" />
+        <Spinner
+            android:id="@+id/spinnerDrinks"
+            android:layout_marginRight="20dp"/>
+    </TableRow>
+    <View
+        android:layout_height="5dip"
+        android:background="@color/white" />
+    <TableRow>
+
+        <TextView
+            android:text="STARTERS"
+            android:gravity="center"
+            android:padding="3dip" />
+        <Spinner
+            android:id="@+id/spinnerStarters"
+            android:layout_marginRight="20dp"/>
+    </TableRow>
+    <View
+        android:layout_height="5dip"
+        android:background="@color/white" />
+    <TableRow>
+
+        <TextView
+            android:text="MAIN DISH"
+            android:gravity="center"
+            android:padding="3dip" />
+        <Spinner
+            android:id="@+id/spinnerMainDish"
+            android:layout_marginRight="20dp"/>
+    </TableRow>
+    <View
+        android:layout_height="5dip"
+        android:background="@color/white" />
+    <TableRow>
+
+        <TextView
+            android:text="DESSERTS"
+            android:gravity="center"
+            android:padding="3dip" />
+        <Spinner
+            android:id="@+id/spinnerDesserts"
+            android:layout_marginRight="20dp"/>
+    </TableRow>
+
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/design_default_color_primary_dark"
+        android:text="SUBMIT" />
+
+</TableLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*">
+    <View
+        android:layout_height="120dip"
+        android:background="@color/white"
+        />
+
+    <TextView
+        android:text="Sangeethas DATA ENTRY"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:padding="3dip" />
+    <View
+        android:layout_height="10dip"
+        android:background="@color/white"
+        />
+    <TableRow>
+        <TextView
+            android:text="USERNAME:"
+            android:gravity="center"
+            android:padding="3dip" />
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:ems="7"
+            android:inputType="text"
+            android:layout_marginRight="30dp"/>
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="PASSWORD"
+            android:gravity="center"
+            android:padding="3dip" />
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:ems="7"
+            android:inputType="text"
+            android:layout_marginRight="30dp"/>
+    </TableRow>
+
+    <View
+        android:layout_height="20dip"
+        android:background="@color/white"
+        />
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="20dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/purple_200"
+        android:text="SUBMIT" />
+
+
+</TableLayout>
