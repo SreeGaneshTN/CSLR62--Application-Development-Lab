@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Student>
+<PersonDetails>  
+      <id>4041</id>
+      <name>sathish</name>
+      <email>sathish@nitt.edu</email>
+      <phoneno>8990192930</phoneno>
+      <gender>male</gender>
+      <Year>3</Year>
+     <city>Krishnagiri</city>
+   <Branch>CSE</Branch>
+</PersonDetails> 	
+<PersonDetails>
+	<id>4046</id>
+   <name>Ganesh</name>
+   <email>ganesh@nitt.edu</email>
+      <phoneno>8223192530</phoneno>
+      <gender>male</gender>
+      <Year>3</Year>
+   <city>Trichy</city>
+   <Branch>CSE</Branch>
+</PersonDetails> 
+<PersonDetails>
+   <id>4050</id>
+   <name>sreeram</name>
+   <email>ram@nitt.edu</email>
+      <phoneno>9924012930</phoneno>
+      <gender>male</gender>
+      <Year>3</Year>
+   <city>Chennai</city>
+   <Branch>CSE</Branch>
+</PersonDetails> 
+<PersonDetails>
+   <id>4701</id>
+   <name>Abishek</name>
+   <email>abhi@nitt.edu</email>
+      <phoneno>809913950</phoneno>
+      <gender>male</gender>
+      <Year>3</Year>
+   <city>Chennai</city>
+   <Branch>Mechanical</Branch>
+</PersonDetails> 
+<PersonDetails>
+   <id>4128</id>
+   <name>Suraj</name>
+   <email>suraj@nitt.edu</email>
+      <phoneno>7889013950</phoneno>
+      <gender>male</gender>
+      <Year>3</Year>
+   <city>Dubai</city>
+   <Branch>CSE</Branch>
+</PersonDetails> 
+<PersonDetails>
+   <id>4789</id>
+   <name>Shreyaskumar</name>
+   <email>Shreyas@nitt.edu</email>
+      <phoneno>9112913950</phoneno>
+      <gender>male</gender>
+      <Year>3</Year>
+   <city>Chennai</city>
+   <Branch>ECE</Branch>
+</PersonDetails> 
+<PersonDetails>
+   <id>4901</id>
+   <name>Lavanya</name>
+   <email>lava@nitt.edu</email>
+      <phoneno>6734849085</phoneno>
+      <gender>female</gender>
+      <Year>2</Year>
+   <city>Trichy</city>
+   <Branch>EEE</Branch>
+</PersonDetails> 
+<PersonDetails>
+   <id>5001</id>
+   <name>John</name>
+   <email>John@nitt.edu</email>
+      <phoneno>6755549085</phoneno>
+      <gender>male</gender>
+      <Year>3</Year>
+   <city>Madurai</city>
+   <Branch>ICE</Branch>
+</PersonDetails> 
+<PersonDetails>
+   <id>3199</id>
+   <name>Srikrishnan</name>
+   <email>krishna@nitt.edu</email>
+      <phoneno>99445599332</phoneno>
+      <gender>male</gender>
+      <Year>1</Year>
+   <city>Trichy</city>
+   <Branch>ICE</Branch>
+</PersonDetails> 
+<PersonDetails>
+   <id>2848</id>
+   <name>Gaurav</name>
+   <email>Gaurav@nitt.edu</email>
+      <phoneno>9901294232</phoneno>
+      <gender>male</gender>
+      <Year>4</Year>
+   <city>Delhi</city>
+   <Branch>ECE</Branch>
+</PersonDetails> 
+</Student>
