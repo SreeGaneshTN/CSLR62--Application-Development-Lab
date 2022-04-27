@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ffff99">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="State Bank of India"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="BANK REGISTRATION"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registration"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20sp"
+        android:backgroundTint="#03A9F4"
+        android:textSize="20sp"
+        android:text="Username" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20sp"
+        android:backgroundTint="#03A9F4"
+        android:textSize="20sp"
+        android:text="Password" />
+
+    <TextView
+        android:id="@+id/phoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20sp"
+        android:backgroundTint="#03A9F4"
+        android:textSize="20sp"
+        android:text="Phone\nNumber" />
+
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/username"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/username"
+        android:textSize="20sp"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/password"
+        android:layout_toEndOf="@id/password"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        />
+
+    <EditText
+        android:id="@+id/phoneNumberInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/phoneNumber"
+        android:layout_toEndOf="@id/phoneNumber"
+        android:layout_marginStart="20dp"
+        android:textSize="20sp"
+        android:inputType="text"
+        />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#000000"
+        android:text="REGISTER" />
+
+</RelativeLayout>
