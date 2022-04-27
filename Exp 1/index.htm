@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>User registration Validation</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="form">
+      <form class="registration" method="post" onsubmit="validate()">
+        <h1>👋 Welcome!</h1>
+
+        <div class="field-entry">
+          <label>Name</label>
+          <input placeholder="Enter Name" type="text" id='Name' value="" required>
+        </div>
+        <div class="field-entry">
+
+          <label>UserName</label>
+          <input placeholder="Enter Username" type="text" id='Username' value="" required>
+        </div>
+
+        <div class="field-entry">
+          <label>Email</label>
+          <input placeholder="Enter Email" type="text" id="email" value="" required>
+        </div>
+        <div class="field-entry">
+          <label>Mobile Number</label>
+          <input placeholder="Enter MobileNumber" type="number" id="number" value="" required>
+        </div>
+        <div class="field-entry">
+          <label>Address</label>
+          <input placeholder="Enter Address" type="text" id="address" value="" required>
+        </div>
+        <div class="field-entry">
+          <label style="color: #fff;margin-top:0;margin-right:5px;">Gender: </label>
+          <label class='radio-container'>Male
+            <input placeholder=" " type="radio" name="radio-btn" required>
+          </label>
+          <label class='radio-container'>Female
+            <input placeholder=" " type="radio" name="radio-btn" required>
+          </label>
+        </div>
+        <div class="field-entry">
+          <label>Date of Birth</label>
+          <input type="date" name="dob" id="dob" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31">
+        </div>
+        <div class="field-entry">
+          <label>Password</label>
+          <input placeholder="Enter Password" type="password" id="password" value="" required>
+        </div>
+
+        <div class="field-entry">
+          <label>Confirm Password</label>
+          <input placeholder=" " type="password" id="confirm-passwd" value="" required>
+        </div>
+        <div class="checkbox-entry">
+          <input type="checkbox" id="policy" required>
+          <span style='color:white'>I agree to the <a href="#" target="_blank"
+              title="Actually not a Terms of Service">Terms of Service</a></span>
+        </div>
+
+        <input class="submit-btn" type="submit" value="Submit">
+        <input class="reset-btn" type="reset">
+
+
+
+        <div class="done">
+          <h1>👌 You're all set!</h1>
+          <a href="javascript:window.location.reload(true)">Again</a>
+        </div>
+        <div class="progress">
+          <progress />
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js" async defer></script>
+</body>
+
+</html>

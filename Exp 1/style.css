@@ -1,0 +1,181 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url("https://res.cloudinary.com/finnhvman/image/upload/v1541930411/pattern.png");
+}
+html{
+	font-size: 100%; 
+  box-sizing: border-box;
+  font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+}
+
+
+label{
+  font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.2rem; 
+  line-height: 1.15;
+}
+
+
+.registration {
+  position: relative;
+  border-radius: 8px;
+  padding: 16px 48px;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-color: #14202f;
+  width:600px;
+  border-color: #8d704d;
+  z-index: 1;
+}
+
+h1 {
+  margin: 32px 0;
+  font-family: "Roboto", "Segoe UI", BlinkMacSystemFont, system-ui, -apple-system;
+  font-weight: normal;
+  text-align: center;
+  color:white
+}
+
+.registration > label {
+  display: block;
+  margin: 24px 0;
+  width: 320px;
+  color: #ffff;
+}
+.field-entry {
+  width:80%;
+  padding:10px ;
+  margin-left:25px;
+  margin-top:5px;
+}
+input[type='text'],input[type='password'],
+input[type='email'],input[type='number'] {
+  width:70%;
+  cursor: pointer;
+  display:block;
+  font-size:1.2rem;
+  height:30px;
+  border-radius:5px;
+  padding:3px;
+  margin:5px 2px ;
+  opacity: 70%;
+  border:none;
+}
+input[type='text']:focus,input[type='password']:focus,
+input[type='email']:focus,input[type=number]:focus{
+  border:3px red solid;
+}
+
+input[type='submit'],input[type='reset']
+{
+  position:relative;
+  background-color: #bf0d82;
+  font-size:1.5rem;
+  border-radius: 50px;
+  margin-top:15px;
+  margin-left:10px;
+  width:150px;
+  height: 40px;
+  bottom:5%;
+  left:23%;
+  cursor: pointer;
+  text-align:center;
+}
+
+input[type=date]
+{
+  height:30px;
+  margin-left:10px;
+  opacity: 70%;
+}
+input[type='submit']:hover,input[type='submit']:active,input[type='submit']:focus{
+  background-color: #bf0d6b;
+}
+input[type='reset']:hover,input[type='reset']:active,input[type='reset']:focus{
+  background-color: #bf0d6b;
+}
+.registration .checkbox-entry
+{
+  margin-top:15px;
+
+}
+.input[type='radio']
+{
+  cursor: pointer;
+}
+a {
+  color: yellow;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  display: block !important;
+  margin: 32px auto;
+}
+
+.done,
+.progress {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  visibility: hidden;
+}
+
+.done {
+  transition: visibility 0s 1s;
+  background-color: #14202f;
+}
+
+.signed > .done {
+  visibility: visible;
+}
+
+.done > a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.progress {
+  opacity: 0;
+}
+
+.signed > .progress {
+  animation: loading 4s;
+}
+
+@keyframes loading {
+  0% {
+      visibility: visible;
+  }
+  12.5% {
+      opacity: 0;
+  }
+  25% {
+      opacity: 1;
+  }
+  87.5% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+
