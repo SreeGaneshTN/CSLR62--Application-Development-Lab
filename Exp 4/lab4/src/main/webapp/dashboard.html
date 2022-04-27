@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="ajax.css">
+</head>
+<body>
+  <div class="container red topBotomBordersOut">
+    <a onclick="registered()">REGISTERED USERS</a>
+    <a onclick="book()">VIEW BOOK</a>
+    <a onclick="addbook()">ADD BOOK</a>
+    <a href="index.html">LOGOUT</a>
+  </div>
+
+  <div id="table-user-wrapper">
+  </div>
+  <div id="table-book-wrapper">
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+  <!-- Modal content -->
+  
+  
+</div>
+  <form class="addbook-form" action="#" method="post">
+    <h1>Add Book Form</h1>
+    <label>Book Id</label>
+    <input type="text" name="id" required>
+    <label>Book Title</label>
+    <input type="text" name="title" required>
+    <label>Description</label>
+    <input type="text" name="desc" required>
+    <label>Price</label>
+    <input type="text" name="price" required>
+    <label>Author</label>
+    <input type="text" name="author" required>
+    <label>Publisher</label>
+    <input type="text" name="publisher" required>
+    <label>Available</label>
+    <input type="text" name="avail" required>
+    <button id="addbook"type="button" onclick="add()">ADD BOOK</button>
+  </form>
+  <script src="ajax.js"></script>
+</body>
+</html>

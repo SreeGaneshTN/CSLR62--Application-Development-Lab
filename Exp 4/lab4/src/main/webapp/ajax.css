@@ -1,0 +1,263 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway';
+
+html, body
+{
+  background-color: teal;
+    margin: 0px;
+}
+
+
+
+header h1
+{
+    color: #AAA;
+    font-size: 40px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+
+div.container
+{
+    font-family: Raleway;
+    margin: 0 auto;
+	padding: 2em 3em;
+	text-align: center;
+  background: #f44336;
+}
+
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+
+/* Top and Bottom borders go out */
+div.topBotomBordersOut a:before, div.topBotomBordersOut a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersOut a:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersOut a:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
+#table-user-wrapper,#table-book-wrapper
+{
+  margin:3em 1em 1em 3em;
+  padding:1em;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size:24px;
+
+}
+
+.table-user,.table-book {
+
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: normal;
+  border: 4px black solid;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+  position: relative;
+  box-shadow: 2px rgba(0,0,0,0.5);
+}
+
+.table-user td, .table-user th {
+  text-align: center;
+  padding: 8px;
+}
+
+.table-user td {
+  border: 2px solid black;
+  font-size: 22px;
+}
+
+.table-user thead  {
+  color: #ffffff;
+  background: #000000;
+}
+
+
+
+.table-user thead th:nth-child(odd) {
+  color: #ffffff;
+  background: #271b3d;
+}
+
+
+.more-info
+{
+  width:60%;
+  text-align: center;
+  background-color: crimson;
+  color:whitesmoke;
+  border-radius:10px;
+  padding:10px;
+  margin:5px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border:2px black solid;
+}
+.table-book td, .table-book th {
+  text-align: center;
+  padding: 8px;
+}
+
+.table-book td {
+  border: 2px solid black;
+  font-size: 22px;
+}
+
+.table-book thead  {
+  color: #ffffff;
+  background: #000000;
+}
+
+
+
+.table-book thead th:nth-child(odd) {
+  color: #ffffff;
+  background: #271b3d;
+}
+
+.addbook-form{
+  padding:5%;
+  background: white;
+  max-width:30em;
+  margin: 3% auto;
+  box-shadow:1em 1em 0 0 rgba(0,0,0,.2);
+  font-family: Raleway;
+  display: none;
+}
+
+.addbook-form h1
+{
+  text-align: center;
+}
+
+input{
+  display:block;
+  width:100%;
+  padding:.2em;
+  margin: .2em 0 .6em;
+  font-size:1.4em;
+}
+input[type=text]:focus,input[type=password]:focus
+{
+  border:2px rebeccapurple solid;
+}
+#addbook {
+  background: salmon;
+  border:none;
+  margin:1em 0;
+  color:white;
+  padding:1em;
+  cursor: pointer;
+  width:100%;
+  font-size: 1em;
+}
+#addbook:hover{
+  background-color: black;
+  transition-duration: 0.5s;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size:26px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.dialog-table
+{
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: normal;
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+  position: relative;
+  box-shadow: 2px rgba(0,0,0,0.5);
+  text-align: center;
+}
+.dialog-table td{
+    text-align: center;
+    padding: 8px;
+    font-size: 22px;
+
+}
+.modal-content h2
+{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
