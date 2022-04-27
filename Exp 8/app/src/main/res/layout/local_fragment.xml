@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="100dip"
+        android:gravity="center"
+        android:padding="3dip"
+        android:text="GALLERY VIEW"
+        android:textColor="#660033"
+        android:textSize="20dip" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="619dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="#ffcc66"
+        android:padding="3dp"
+        android:scrollbars="none" />
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="100dip"
+        android:gravity="center"
+        android:padding="3dip"
+        android:text="A PICTURE IS A 1000 WORDS!!!"
+        android:textColor="#660033"
+        android:textSize="13dip" />
+
+</LinearLayout>
