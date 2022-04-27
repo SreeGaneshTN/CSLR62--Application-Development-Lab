@@ -1,0 +1,85 @@
+html{
+  margin:0;
+  padding:0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+body
+{
+  background-color: #479f69;
+  box-sizing: border-box;
+  height:100%;
+  font-family: 'Nunito', sans-serif;
+  
+}
+.welcome
+{
+  text-align: center;
+  font-size:36px;
+  padding:20px;
+  color:whitesmoke;
+}
+.wrapper
+{
+  width:70%;
+  height:80%;
+  text-align: center;
+  text-overflow: ellipsis;
+  margin:0 auto;
+  background-color: black;
+  opacity: 90%;
+  color:white;
+  padding:5px 5px 5px 18px;
+  border-radius: 4%;
+  border:1px red solid;
+  font-weight: bold;
+}
+.wrapper h2
+{
+  font-size:1.8em;
+  text-align: left ;
+  text-decoration-line: underline;
+  color:coral
+
+}
+.instructions
+{
+  margin:auto 0;
+  
+}
+.instructions ol
+{
+  text-align: left;
+  padding:15px;
+  font-size: 1.3em;
+}
+li
+{
+  margin:auto;
+  padding:10px;
+}
+input[type=submit]{
+  width:100px;
+  height:50px;
+  background-color: black;
+  color:white;
+  font-size:20px;
+  cursor:pointer;
+  margin-left:15px;
+
+}
+input[type=submit]:hover{
+  background-color:teal;
+  color:black;
+}
+input[type=number]{
+  width:230px;
+  height:40px;
+  background-color: white;
+  color:black;
+  font-size:20px;
+  cursor:pointer;
+  padding:3px;
+  border-radius: 10px;
+
+}
